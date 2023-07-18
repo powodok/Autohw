@@ -1,0 +1,14 @@
+name: AppVeyor Status Badge
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Add AppVeyor Status Badge
+      run: echo "[![AppVeyor](https://ci.appveyor.com/api/projects/status/github/powodok/Autohw?svg=true)](https://ci.appveyor.com/project/powodok/Autohw)"
